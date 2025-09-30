@@ -5,7 +5,7 @@ This repo contains a **single-pass converter** that turns a lightweight “C+”
 
 ## What is “C+”?
 
-**C+** is “basically C with two key conveniences”:
+**C+** is “basically C with three key conveniences”:
 
 1. **Pointers use `.` in source (never `->`).**  
    In C+, all member access uses a dot. During conversion, the tool changes `.` to `->` where the base expression is a pointer. For multi-level pointers, it rewrites `pps.a` as `(*pps)->a`.
