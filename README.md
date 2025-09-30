@@ -13,6 +13,9 @@ This repo contains a **single-pass converter** that turns a lightweight “C+”
 2. **End of line acts like a semicolon `;`.**  
    You don’t have to type `;` at the end of statements. The converter inserts semicolons where needed (and avoids doing it inside enum bodies or immediately after `{`).
 
+3. **Function overloading.**  
+   Functions can share a name as long as its argumets differ.
+
 Everything else should “feel like C”. Preprocessor lines are kept; comments are ignored.
 
 ### Quick C+ examples
